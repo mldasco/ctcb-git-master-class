@@ -1,5 +1,6 @@
-Commit 2 on Feature A
-Commit 1 on Feature A
+Commit 1 
+Commit 2
+Commit 3
 
 Generating conflict another 1.
 

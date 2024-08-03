@@ -1,6 +1,1 @@
-Commit 2 on Feature A
-Commit 1 on Feature A
-
-Generating conflict another 1.
-
-Testing 2
+Develop moves on

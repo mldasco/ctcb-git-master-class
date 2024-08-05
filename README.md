@@ -1,9 +1,5 @@
 Develop moves on
 
-wgt
-wgt 2
-
-
 Fix on develop!
 Fix on develop 1!
 Fix on develop 2!
@@ -13,4 +9,9 @@ Fix on develop 5!
 
 wgt
 wgt 2
-wgt 3wgt 3wgt 3
+wgt 3
+
+
+Feature-wgt-001!
+New feature - my changes
+Final change!

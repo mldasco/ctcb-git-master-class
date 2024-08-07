@@ -12,3 +12,11 @@ Fix on develop 7!
 Fix on develop 8!
 Fix on develop 9!
 Fix on develop 10!
+
+wgt
+wgt 2
+wgt 3
+
+Feature-wgt-001!
+New feature - my changes
+Final change!

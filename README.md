@@ -1,3 +1,5 @@
+Conflict generator:
+
 Develop moves on
 
 Fix on develop!
@@ -19,3 +21,6 @@ wgt 4
 wgt 5
 wgt 6
 wgt 7
+wgt-000 1
+
+# Modified by PowerShell script

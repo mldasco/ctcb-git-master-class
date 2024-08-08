@@ -16,7 +16,7 @@ Fix on develop 10!
 
 wgt
 wgt 2
-wgt 3
+gt 3
 wgt 4
 wgt 5
 wgt 6

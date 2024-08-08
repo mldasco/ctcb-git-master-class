@@ -24,3 +24,4 @@ wgt 7
 wgt-000 1
 
 # Modified by PowerShell script
+test 1

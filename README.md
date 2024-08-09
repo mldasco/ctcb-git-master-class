@@ -1,1 +1,4 @@
-Clearing out the file
+Clearing out the file - Adding fix
+WGTD-592 WGT Code Merge
+Fix in Readme
+

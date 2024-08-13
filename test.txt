@@ -1,3 +1,0 @@
-this is  a test file
-to see if it is not ignored by git ignore 
-as python files are ignored

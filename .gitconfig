@@ -1,6 +1,6 @@
 git config --global -e
 [user]
-	name = SHAMMY DEVARAPALLI
+	name = SHAMMY ARAVINDVARDHAN KUMAR DEVARAPALLI
 	email = SDEVARAPALLI@transurban.com
 [sequence]
 	editor = code --wait --reuse-window #up to you what editor you want to use

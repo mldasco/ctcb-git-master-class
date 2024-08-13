@@ -1,4 +1,10 @@
 sdevarapalli Shammy Aravind Vardhan Kumar Devarapalli
 
 hotfix/no-ref/prod-fix-asap
+bugfix/CORE024/fix-button-click
+feature/WGTD-25/new-buttong
 
+
+CORE-007 refactor: optimi performance no-ref 
+chore: add new codeowners file WGTD-002 
+fix: fix button not working GLIDE-012 feature: new adapter

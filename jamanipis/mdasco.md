@@ -1,1 +1,0 @@
-jamanipis Jasmin Manipis

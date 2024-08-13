@@ -1,4 +1,5 @@
 srowetu Sebastian Rowe
+<<<<<<< HEAD
 
 hotfix/no-ref/prod-fix-asap
 bugfix/CORE-21/fix-button-click
@@ -8,3 +9,5 @@ CORE-21 feature: Optimise performance xyz function
 no-ref feature: Adding a new codeowners file
 WGTD-002 fix: Fix button not working
 GLIDE-01 feature: create a new feature
+=======
+>>>>>>> 4e02b46 (srowetu-001 chore: adding srowetu.md for roll call.)

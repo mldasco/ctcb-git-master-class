@@ -3,6 +3,8 @@ Conflict generator: Clearing out the file - Adding fix WGTD-592 WGT Code Merge F
 # Modified by PowerShell script
 # gitmasterclass update
 
+new change in develop file
+
 
 git switch -c develop
 git commit

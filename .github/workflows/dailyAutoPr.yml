@@ -1,4 +1,4 @@
-name: Create PRs from main to release branches
+name: Create PRs from source to target branches daily.
 
 on:
   schedule:

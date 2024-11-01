@@ -8,6 +8,9 @@ on:
 permissions:
   contents: write
 
+env:
+  GH_TOKEN: ${{ github.token }}
+
 jobs:
   create-prs:
     runs-on: ubuntu-latest
@@ -27,5 +30,7 @@ jobs:
           git pull origin develop
 
       - name: Create PR from target to source
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr create --base wgt --head develop --title "NO-REF chore: Daily AutoPR from develop into wgt" --body "Automated PR to merge changes from develop into release-1"

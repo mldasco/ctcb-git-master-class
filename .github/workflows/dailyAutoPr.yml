@@ -23,17 +23,11 @@ jobs:
 
       - name: Checkout main branch
         run: |
-          git checkout main
-          git pull origin main
+          git checkout develop
+          git pull origin develop
 
       - name: Create PR from main to release-1
         run: |
-          git checkout -b temp-branch-release-1
+          git checkout -b develop-
           git push origin temp-branch-release-1
-          gh pr create --base release-1 --head temp-branch-release-1 --title "Merge main into release-1" --body "Automated PR to merge changes from main into release-1"
-
-      - name: Create PR from main to release-2
-        run: |
-          git checkout -b temp-branch-release-2
-          git push origin temp-branch-release-2
-          gh pr create --base release-2 --head temp-branch-release-2 --title "Merge main into release-2" --body "Automated PR to merge changes from main into release-2"
+          gh pr create --base wgt --head develop --title "NO-REF chore: Daily AutoPR from develop into wgt" --body "Automated PR to merge changes from develop into release-1"

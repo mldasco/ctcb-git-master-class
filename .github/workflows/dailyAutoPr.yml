@@ -31,6 +31,6 @@ jobs:
 
       - name: Create PR from target to source branch
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr create --base wgt --head develop --title "NO-REF chore: Daily AutoPR from develop into wgt" --body "Automated PR to merge changes from develop into release-1"

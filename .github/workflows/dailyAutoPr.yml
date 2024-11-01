@@ -26,8 +26,6 @@ jobs:
           git checkout develop
           git pull origin develop
 
-      - name: Create PR from main to release-1
+      - name: Create PR from target to source
         run: |
-          git checkout -b develop-
-          git push origin temp-branch-release-1
           gh pr create --base wgt --head develop --title "NO-REF chore: Daily AutoPR from develop into wgt" --body "Automated PR to merge changes from develop into release-1"

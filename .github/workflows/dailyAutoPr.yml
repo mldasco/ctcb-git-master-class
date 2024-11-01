@@ -1,0 +1,39 @@
+name: Create PRs from main to release branches
+
+on:
+  schedule:
+    - cron: '0 7 * * *' # Runs every day at 7 AM
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+permissions:
+  contents: write
+
+jobs:
+  create-prs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Checkout main branch
+        run: |
+          git checkout main
+          git pull origin main
+
+      - name: Create PR from main to release-1
+        run: |
+          git checkout -b temp-branch-release-1
+          git push origin temp-branch-release-1
+          gh pr create --base release-1 --head temp-branch-release-1 --title "Merge main into release-1" --body "Automated PR to merge changes from main into release-1"
+
+      - name: Create PR from main to release-2
+        run: |
+          git checkout -b temp-branch-release-2
+          git push origin temp-branch-release-2
+          gh pr create --base release-2 --head temp-branch-release-2 --title "Merge main into release-2" --body "Automated PR to merge changes from main into release-2"

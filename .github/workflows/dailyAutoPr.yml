@@ -1,4 +1,4 @@
-name: Create PRs from main to release branches
+name: Create PRs from source to target branches
 
 on:
   schedule:
@@ -24,12 +24,12 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      - name: Checkout main branch
+      - name: Checkout source branch
         run: |
           git checkout develop
           git pull origin develop
 
-      - name: Create PR from target to source
+      - name: Create PR from source to target branch
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

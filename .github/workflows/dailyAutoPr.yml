@@ -1,0 +1,37 @@
+name: Create PRs from source to target branches
+
+on:
+  schedule:
+    - cron: '0 7 * * *' # Runs every day at 7 AM
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+permissions:
+  contents: write
+  pull-requests: write
+  
+env:
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+  create-prs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Checkout source branch
+        run: |
+          git checkout develop
+          git pull origin develop
+
+      - name: Create PR from target to source branch
+        run: | 
+          gh pr create --base wgt --head develop --title "NO-REF chore: Daily AutoPR from develop into wgt" --body "Automated PR to merge changes from develop into release-1"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
